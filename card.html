@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Магазин</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <div class="container-fluid">
+
+
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a class="navbar-brand" href="./index.html">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Меню
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico1.svg"
+                                                        alt=""></span>Супы</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico2.svg"
+                                                        alt=""></span>Хачапури</a></li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico3.svg"
+                                                        alt=""></span>Холодные
+                                                закуски</a></li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico4.svg"
+                                                        alt=""></span>Хинкали</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico5.svg"
+                                                        alt=""></span>Шашлык</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico6.svg"
+                                                        alt=""></span>Соусы</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico7.svg"
+                                                        alt=""></span>Салаты</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico8.svg"
+                                                        alt=""></span>Горячие
+                                                блюда</a></li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico9.svg"
+                                                        alt=""></span>Гарнир</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico10.svg"
+                                                        alt=""></span>Десерты</a></li>
+                                        <li><a class="dropdown-item" href="#"><span><img src="img/ico11.svg"
+                                                        alt=""></span>Напитки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./delivery.html">Доставка</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./order.html">Оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./booking.html">Бронь стола</a>
+                                </li>
+                            </ul>
+                            <div class="menu-right d-flex">
+                                <div class="menu-contact">
+                                    <a href="tel:+79811052533">
+                                        <img src="img/phone.svg" alt="">
+                                        <span>+7 (981) 105 25 33</span>
+                                    </a>
+                                </div>
+                                <div class="menu-user">
+                                    <button class="profile">
+                                        <img src="img/person.svg" alt="">
+                                    </button>
+                                    <a href="" class="cart">
+                                        <img src="img/shopping-cart.svg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="card-product">
+            <div class="container">
+                <div class="card-top">
+                    <div class="card-img">
+                        <img src="https://cafe-nika.ru/data/catalog/220/7307_60771nothumb500_1.jpg" alt="">
+                    </div>
+                    <div class="card-sidebar">
+                        <div class="title">Говядина 250гр</div>
+                        <div class="rating">
+                            <span class="active"></span>
+                            <span class="active"></span>
+                            <span class="active"></span>
+                            <span class="active"></span>
+                            <span></span>
+                        </div>
+                        <div class="reviews">
+                            Кол-во отзывов: <span>23</span>
+                        </div>
+                        <div class="price">
+                            <span>Цена за уп.</span> <b>1 050 ₽</b>
+                        </div>
+                        <div class="price">
+                            <span>Кол-во шт в упаковке</span> <b>4 шт.</b>
+                        </div>
+                        <div class="price">
+                            <span>Количество</span>
+                            <div class="input_range" data-desc="Ед. изм.: упаковка">
+                                <span class="min button">
+                                    <img src="img/minus.png" alt="">
+                                </span>
+                                <input type="text" name="qty" id="qty" maxlength="12">
+                                <span class="plus button">
+                                    <img src="img/plus.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="pay-bottom">
+                            <div class="to-pay">
+                                <span>Итого к оплате</span>
+                                <b>1 050 ₽</b>
+                            </div>
+                            <div class="pay-block">
+                                <button class="pay-popup">Купить</button>
+                                <button class="cart-add"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-botton">
+                    <div class="card-info">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#about_product"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">О товаре</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#product_parametr"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Параметры</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link rev-swiper" id="pills-contact-tab" data-toggle="pill"
+                                    href="#product_reviews" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">Отзывы</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="about_product" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <h2 class="tab">Описание</h2>
+                                <p>Полутвердый пластичный однородный сыр, слегка ломкий на изгибе. Пажитник придает
+                                    легкое ореховое послевкусие. В Италии считается столовым сыром, который подходит к
+                                    любому времени суток и к любому блюду и к вину</p>
+
+                                <p>Вес головки 500 г. +/-10%. Цена за 1 кг.</p>
+
+                                <p>Продукция компании Alpenville изготовлена преимущественно из Шарангского молока</p>
+                            </div>
+                            <div class="tab-pane fade" id="product_parametr" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <ul class="product_ul">
+                                    <li><b>Калории:</b> 420</li>
+
+                                    <li><b>Жиры:</b> 54</li>
+
+                                    <li><b>Белки:</b> 27</li>
+
+                                    <li><b>Углеводы:</b> 18</li>
+
+                                    <li><b>Масса:</b> 500 грамм</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="product_reviews" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="slider-reviews">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="rev_header">
+                                                <div class="avatar">
+                                                    <img src="img/rew.png" alt="">
+                                                </div>
+                                                <div class="rev_avatar">
+                                                    <div class="rev_name">Анатолий Петров<img src="img/revico.svg"
+                                                            alt=""></div>
+                                                    <div class="rating">
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <a href="" class="rev_social">vk.com/anatoliy</a>
+
+                                                </div>
+                                            </div>
+                                            <div class="rev_footer">
+                                                <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                    привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                    Действительно натуральные продукты. Я обязательно буду заказывать
+                                                    дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                                <a href="">Читать полностью</a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="rev_header">
+                                                <div class="avatar">
+                                                    <img src="img/rew.png" alt="">
+                                                </div>
+                                                <div class="rev_avatar">
+                                                    <div class="rev_name">Анатолий Петров<img src="img/revico.svg"
+                                                            alt=""></div>
+                                                    <div class="rating">
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <a href="" class="rev_social">vk.com/anatoliy</a>
+
+                                                </div>
+                                            </div>
+                                            <div class="rev_footer">
+                                                <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                    привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                    Действительно натуральные продукты. Я обязательно буду заказывать
+                                                    дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                                <a href="">Читать полностью</a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="rev_header">
+                                                <div class="avatar">
+                                                    <img src="img/rew.png" alt="">
+                                                </div>
+                                                <div class="rev_avatar">
+                                                    <div class="rev_name">Анатолий Петров<img src="img/revico.svg"
+                                                            alt=""></div>
+                                                    <div class="rating">
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span class="active"></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <a href="" class="rev_social">vk.com/anatoliy</a>
+
+                                                </div>
+                                            </div>
+                                            <div class="rev_footer">
+                                                <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                    привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                    Действительно натуральные продукты. Я обязательно буду заказывать
+                                                    дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                                <a href="">Читать полностью</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"><span>Еще</span><img src="img/arrow_a.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-sidebar">
+                        <div class="purchase-info">
+                            <div class="title">Закажите на 3000 RUB и получите</div>
+                            <div class="line">
+                                <img src="img/pig.svg" alt=""><span><b>30 RUB</b> на бонусный счет</span>
+                            </div>
+                            <div class="line">
+                                <img src="img/veh.svg" alt=""><span><b>Бесплатная доставка</b></span>
+                            </div>
+                            <div class="range-slide">
+                                <div class="range-line" data-mins="0" data-maxs="3000">
+                                    <div style="width: 60%;" class="green-line"></div>
+                                    <div class="round" data-min="1000 (минимальный заказ)"></div>
+                                </div>
+                                <div class="range-text">
+                                    Осталось <b>1988 RUB</b> до бесплатной доставки
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <div class="container">
+                <div class="block">
+                    <h4 class="title">Бесплатная доставка по Москве<br>
+                        и Области от 2999 RUB!</h4>
+                    <a href="">Оформить</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-left">
+                        <div class="phones">
+                            <div class="phone-item">
+                                <span>Бесплатный звонок по РФ</span>
+                                <a href="tel:+78312826000">+7 (831) 282-60-00</a>
+                            </div>
+                            <div class="phone-item">
+                                <span>Для приема заказов</span>
+                                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+                            </div>
+                        </div>
+                        <div class="work-time">
+                            График работы по будням с 9:00 до 18:00
+                        </div>
+                        <div class="work-email">
+                            <a href="mailto:info@.ru">Email: info@.ru</a>
+                            <a href="" class="site-help">Поддержка</a>
+                        </div>
+                    </div>
+                    <div class="footer-center">
+                        <div class="social">
+                            <a href="">Мы в вконтакте ></a>
+                            <a href="">Мы в instagram ></a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="person">
+                            <a href=""><img src="img/person-wh.png" alt=""><span>Войти / Регистрация</span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <span>©2020. Пиросмани</span>
+                    <a href="">Условия и соглашения</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // Счетчик
+        jQuery(function () {
+            var j = jQuery;
+            var addInput = '#qty';
+            var n = 1;
+
+            j(addInput).val(n + ' шт.');
+
+            j('.plus').on('click', function () {
+                j(addInput).val(++n + ' шт.');
+            })
+
+            j('.min').on('click', function () {
+                if (n >= 1) {
+                    j(addInput).val(--n + ' шт.');
+                } else {
+
+                }
+            });
+        });
+
+        // Слайдер отзывов
+        var tabEl = document.querySelector('.rev-swiper')
+        tabEl.addEventListener('shown.bs.tab', function (e) {
+            var swiperReviews = new Swiper('.slider-reviews', {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                },
+            });
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
