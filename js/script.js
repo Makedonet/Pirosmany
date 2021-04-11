@@ -29,12 +29,20 @@ var cart = {};
 
 function init() {
     // Вычитуем файл goods.json
-    $.getJSON("goods.json", goodsOut);
+    // $.getJSON("goods.json", goodsOut);
+    $.post(
+        "admin/core.php",
+        {
+            "action": "loadGoods"
+        },
+        goodsOut
+    );
 
 }
 
 function goodsOut(data) {
     // Вывод товара на главную страницу
+    data = JSON.parse(data);
     console.log(data);
     var out = '';
     for (var key in data) {
