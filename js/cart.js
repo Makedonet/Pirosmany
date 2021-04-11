@@ -58,7 +58,7 @@ function delGoods() {
 }
 
 function plusGoods() {
-    //Добавляет товар в корзине
+    //Увеличивает кол-во товара в корзине
     var id = $(this).attr('data-id');
     cart[id]++;
     saveCart();
@@ -66,7 +66,7 @@ function plusGoods() {
 }
 
 function minusGoods() {
-    //Уменьшает товар в корзине
+    //Уменьшает кол-во товара в корзине
     var id = $(this).attr('data-id');
 
     if (cart[id] == 1) {
@@ -80,7 +80,7 @@ function minusGoods() {
 }
 
 function saveCart() {
-    //сохраняю корзину в localStorage
+    //Сохраняю корзину в localStorage
     localStorage.setItem('cart', JSON.stringify(cart)); //корзину в строку
 }
 

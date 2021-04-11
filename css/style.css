@@ -1366,6 +1366,28 @@ footer .footer-wrapper .footer-right .person a img {
   color: #e21111;
 }
 
+.all_cart .mini-cart .cartochka button.minus-goods {
+  height: 100%;
+  width: 25%;
+  font-size: 28px;
+  background: lavender;
+}
+
+.all_cart .mini-cart .cartochka button.minus-goods:hover {
+  color: #e21111;
+}
+
+.all_cart .mini-cart .cartochka button.plus-goods {
+  height: 100%;
+  width: 25%;
+  font-size: 28px;
+  background: lavender;
+}
+
+.all_cart .mini-cart .cartochka button.plus-goods:hover {
+  color: #00ac4e;
+}
+
 .all_cart .mini-cart .cartochka .img {
   background-image: url(../img/productbg.png);
   background-color: #e6e6e6;

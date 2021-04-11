@@ -1119,6 +1119,24 @@ footer {
                         color: rgb(226, 17, 17);
                     }
                 }
+                &.minus-goods {
+                    height: 100%;
+                    width: 25%;
+                    font-size: 28px;
+                    background: lavender;
+                    &:hover {
+                        color: rgb(226, 17, 17);
+                    }
+                }
+                &.plus-goods {
+                    height: 100%;
+                    width: 25%;
+                    font-size: 28px;
+                    background: lavender;
+                    &:hover {
+                        color: #00ac4e;
+                    }
+                }
             }
             .img {
                 background-image: url(../img/productbg.png);
