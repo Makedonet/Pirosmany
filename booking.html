@@ -91,11 +91,13 @@
                                 </div>
                                 <div class="menu-user">
                                     <button class="profile">
-                                        <img src="img/person.svg" alt="">
+                                        <a aria-current="page" href="./php/auth.php"><img src="img/person.svg"
+                                                alt="Авторизация"></a>
                                     </button>
-                                    <a href="" class="cart">
-                                        <img src="img/shopping-cart.svg" alt="">
-                                    </a>
+                                    <button class="cart">
+                                        <a href="cart.html"><img src="img/shopping-cart.svg" alt=""></a>
+
+                                    </button>
                                 </div>
 
                             </div>
@@ -111,61 +113,60 @@
                     <h1>Поддержка</h1>
 
                     <div class="form-support">
-                        <form action="" method="POST">
-                            <textarea name="" id="" cols="30" rows="10">Напишите сообщение...
+
+                        <textarea name="text" id="" cols="30" rows="10" required>
                             </textarea>
-                            <button type="submit"><span>Отправить</span></button>
-                        </form>
+                        <button><span>Отправить</span></button>
+
 
                     </div>
 
                 </div>
             </div>
         </section>
-
-        <footer>
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div class="footer-left">
-                        <div class="phones">
-                            <div class="phone-item">
-                                <span>Бесплатный звонок по РФ</span>
-                                <a href="tel:+78312826000">+7 (831) 282-60-00</a>
-                            </div>
-                            <div class="phone-item">
-                                <span>Для приема заказов</span>
-                                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
-                            </div>
-                        </div>
-                        <div class="work-time">
-                            График работы по будням с 9:00 до 18:00
-                        </div>
-                        <div class="work-email">
-                            <a href="mailto:info@.ru">Email: info@.ru</a>
-                            <a href="" class="site-help">Поддержка</a>
-                        </div>
-                    </div>
-                    <div class="footer-center">
-                        <div class="social">
-                            <a href="">Мы в вконтакте ></a>
-                            <a href="">Мы в instagram ></a>
-                        </div>
-                    </div>
-                    <div class="footer-right">
-                        <div class="person">
-                            <a href=""><img src="img/person-wh.png" alt=""><span>Войти / Регистрация</span></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="footer-bottom">
-                    <span>©2020. Пиросмани</span>
-                    <a href="">Условия и соглашения</a>
-                    <a href="">Политика конфиденциальности</a>
-                </div>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-left">
+                    <div class="phones">
+                        <div class="phone-item">
+                            <span>Бесплатный звонок по РФ</span>
+                            <a href="tel:+78312826000">+7 (831) 282-60-00</a>
+                        </div>
+                        <div class="phone-item">
+                            <span>Для приема заказов</span>
+                            <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+                        </div>
+                    </div>
+                    <div class="work-time">
+                        График работы по будням с 9:00 до 18:00
+                    </div>
+                    <div class="work-email">
+                        <a href="mailto:info@.ru">Email: info@.ru</a>
+                        <a href="" class="site-help">Поддержка</a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="social">
+                        <a href="">Мы в вконтакте ></a>
+                        <a href="">Мы в instagram ></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="person">
+                        <a href=""><img src="img/person-wh.png" alt=""><span>Войти / Регистрация</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <span>©2020. Пиросмани</span>
+                <a href="">Условия и соглашения</a>
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->

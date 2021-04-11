@@ -1,10 +1,10 @@
 
 <?php
-// читать json файл
+//Читать json файл
 $json = file_get_contents('../goods.json');
 $json = json_decode($json, true);
 
-//письмо
+//Письмо
 $message = '';
 $message .= '<h1>Заказ в магазине</h1>';
 $message .= '<p>Телефон: ' . $_POST['ephone'] . '</p>';
@@ -15,16 +15,17 @@ $cart = $_POST['cart'];
 $sum = 0;
 foreach ($cart as $id => $count) {
     $message .= $json[$id]['name'] . ' --- ';
-    $message .= $count . ' --- ';
-    $message .= $count * $json[$id]['cost'];
+    $message .= $count . 'шт. --- ';
+    $message .= $count * $json[$id]['cost'] . ' ₽';
     $message .= '<br>';
     $sum = $sum + $count * $json[$id]['cost'];
 }
+$message .= '<br>';
 $message .= 'Всего: ' . $sum . ' ₽';
 
 //print_r($message);
 
-$to = 'plovets2000@mail.ru' . ','; //не забудь поменять!
+$to = 'plovets2000@mail.ru' . ','; //Не забудь поменять!
 $to .= $_POST['email'];
 $spectext = '<!DOCTYPE HTML><html><head><title>Заказ</title></head><body>';
 $headers  = 'MIME-Version: 1.0' . "\r\n";
